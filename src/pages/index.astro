@@ -1,0 +1,22 @@
+---
+import HomeLayout from "../layouts/HomeLayout.astro";
+import MapWrap	from "../components/MapWrap.tsx";
+
+---
+
+<HomeLayout title="Mataró Bus">
+	<div class="map-wrap">
+		<MapWrap client:only="react" />
+	</div>
+</HomeLayout>
+
+<style>
+	div.map-wrap {
+		background-color: white;
+		width: 100dvw;
+		height: 100dvh;
+		min-height: 100dvh;
+		max-height: 100dvh;
+	}
+	
+</style>
